@@ -1,0 +1,63 @@
+<Project>
+  <!-- 
+    Supported frameworks (included in NuGet packages):
+       .NET 4.8
+       .NET 4.7.2
+	   .NET 4.6.2
+    No longer supported frameworks because of end of life:
+       .NET Core 2.0 is end of life since 1-OCT-2018. No support possible anymore.
+       .NET Core 2.1 is end of life since 21-AUG-2021. No support possible anymore.
+       .NET Core 2.2 is end of life since 31-DEC-2019. No support possible anymore.
+       .NET Core 3.0 is end of life since 03-MAR-2020. No support possible anymore.
+       .NET Core 3.1 is end of life since 13-DEC-2021. No support possible anymore.
+       .NET 6.0 is end of life since until 12-NOV-2024. No support possible anymore.
+       .NET 5.0 is end of life since 10-MAY-2022. No support possible anymore.
+       .NET 4.6 is end of life since 26-APR-2022. No support possible anymore.
+       .NET 4.6.1 is end of life since 26-APR-2022. No support possible anymore.
+       .NET Core 7 until 14-MAY-2024. No support possible anymore.
+
+  -->
+  <Choose>
+    <!-- Visual Studio 2022, supports .NET Framework 4.7.2/4.8, .NET Standard2.0/2.1, .NET 8 and .NET 9-->
+    <When  Condition="'$(VisualStudioVersion)' == '17.0'">
+      <PropertyGroup>
+        <AnalysisLevel>preview</AnalysisLevel>
+        <AnalysisMode>all</AnalysisMode>
+        <AnalysisModeStyle>default</AnalysisModeStyle>
+        <AppTargetFrameworks>net472;net48</AppTargetFrameworks>
+        <AppTargetFramework>net48</AppTargetFramework>
+        <TestsTargetFrameworks>net462;net472;net48</TestsTargetFrameworks>
+        <LibTargetFrameworks>net462;net472;net48</LibTargetFrameworks>
+        <LibCoreTargetFrameworks>net462;net472;net48</LibCoreTargetFrameworks>
+        <LibxTargetFrameworks>net462;net472;net48</LibxTargetFrameworks>
+        <HttpsTargetFrameworks>net462;net472;net48</HttpsTargetFrameworks>
+        <SampleClientTargetFrameworks>net472;net48</SampleClientTargetFrameworks>
+      </PropertyGroup>
+    </When>
+    <!-- Visual Studio 2019, supports .NET Framework 4.8 and .NET Core 3.1 -->
+    <When Condition="'$(VisualStudioVersion)' == '16.0'">
+      <PropertyGroup>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <AppTargetFrameworks>net48</AppTargetFrameworks>
+        <AppTargetFramework>net48</AppTargetFramework>
+        <TestsTargetFrameworks>net48</TestsTargetFrameworks>
+        <LibTargetFrameworks>net48</LibTargetFrameworks>
+        <LibCoreTargetFrameworks>net48</LibCoreTargetFrameworks>
+        <LibxTargetFrameworks>net48</LibxTargetFrameworks>
+        <SampleClientTargetFrameworks>net48</SampleClientTargetFrameworks>
+      </PropertyGroup>
+    </When>
+    <!-- Visual Studio 2017 and earlier, support only .NET Framework 4.8 because .NET Core 2.x is end of life. -->
+    <Otherwise>
+      <PropertyGroup>
+        <AppTargetFrameworks>net48</AppTargetFrameworks>
+        <AppTargetFramework>net48</AppTargetFramework>
+        <TestsTargetFrameworks>net48</TestsTargetFrameworks>
+        <LibTargetFrameworks>net48</LibTargetFrameworks>
+        <LibCoreTargetFrameworks>net48</LibCoreTargetFrameworks>
+        <LibxTargetFrameworks>net48</LibxTargetFrameworks>
+        <SampleClientTargetFrameworks>net48</SampleClientTargetFrameworks>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+</Project>
