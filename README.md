@@ -15,17 +15,13 @@ OPC DA/AE/HDA uses (D)COM technology from Windows. Therefore only Windows is sup
 
 ### Online Help
 
-We provide an online help for the current version: [OPC DA/AE/HDA Client Solution NET Online Help](https://technosoftware.com/help/OPCDaAeHdaClientSolutionNet/20/)
+We will provide an online help for the current version soon: [OPC DA/AE/HDA Client Solution NET Online Help](https://technosoftware.com/help/ClassicClientSolutions/40/)
 
 ### Getting started
 
-#### Simple Examples using the source code
+#### Examples using the source code
 
-Examples can be found in the solution [OpcDaAeHdaWorkshopClients.sln](/OpcDaAeHdaWorkshopClients.sln).
-
-#### Advanced Examples using the source code
-
-Examples can be found in the solution [OpcDaAeHdaSampleClients.sln](/OpcDaAeHdaSampleClients.sln).
+Examples can be found in the solution [OpcDaAeHdaClientSolution.sln](/OpcDaAeHdaClientSolution.sln).
 
 ## Licenses
 TECHNOSOFTWARE provides different licenses depending on the component and on the ownership of a purchased license of the user of the sources. A single ZIP file or a single repository can contain multiple components where the sources have different license models. The valid license is in the header of each source file.
@@ -42,9 +38,8 @@ The OPC Classic Client Solution One-time fee for lifetime SCLA 1.0 license is av
 
 Support for the Solution under the GPL 3.0 or SCLA 1.0 is available as a paid service. Options available are:
 
- * [OPC DA/AE/HDA Support Subscriptions](https://technosoftware.com/product/opc-daaehda-support-subscription/) with 1 month, 6 months or 12 months periods.
- * [Support Email Incident](https://technosoftware.com/product/support-email-incident/) handling a single question or a very specific issue about one of Technosoftware GmbH’s solutions.
- * [Support or Consulting Hour](https://technosoftware.com/product/support-or-consulting-hour/) can involve application design or OPC related issues such as compatibility issues between server and clients, access problems due to Windows security settings, programming issues or design questions.
+ * [OPC DA/AE/HDA Support Subscriptions](https://technosoftware.com/product/opc-daaehda-support-subscription/) with 12 months or 24 months periods.
+security settings, programming issues or design questions.
 
 Please be aware that there is no obligation that Technosoftware will provide free maintenance, support or training.
 
